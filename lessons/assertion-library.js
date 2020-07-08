@@ -10,8 +10,9 @@ result = subtract(7, 3)
 expected = 4
 expect(result).toBe(expected)
 
+//assertion library
 function expect(actual) {
-  return {
+  return { 
     toBe(expected) {
       if (actual !== expected) {
         throw new Error(`${actual} is not equal to ${expected}`)
